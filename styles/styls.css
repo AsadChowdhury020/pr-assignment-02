@@ -1,0 +1,47 @@
+/*Shared styles*/
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  background: rgb(245, 248, 255);
+}
+.container {
+  max-width: 1140px;
+  margin: 0px auto;
+}
+.inter {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+}
+
+.Dark-01 {
+  color: rgb(37, 36, 50);
+}
+.Dark-02 {
+  color: #8987a1;
+}
+.Dark-03 {
+  color: #000000;
+}
+/*Navbar styles*/
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-icons ul {
+  display: flex;
+  gap: 48px;
+}
+.nav-icons ul li {
+  list-style: none;
+}
+.nav-icons ul li a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 400;
+}
+.bold {
+  font-size: 16px;
+  font-weight: 700;
+}
