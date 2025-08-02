@@ -23,6 +23,10 @@
 .Dark-03 {
   color: #000000;
 }
+.merun{
+  color: #E95A08;
+}
+
 /*Navbar styles*/
 .navbar {
   display: flex;
@@ -45,11 +49,40 @@
   font-size: 16px;
   font-weight: 700;
 }
+/*Banner styles*/
+.banner{
+  display: flex;
+  justify-content: space-between;
+  align-items:  end;
+}
+.banner-description h3{
+  font-size: 65px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.banner-description p{
+  font-size: 22px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.50);
+}
+
 /*Media query for mobile device*/
 @media screen and (max-width: 576px){
+  .navbar{
+    align-items: center;
+    margin-top: 10px;
+  }
   .nav-icons ul li:nth-child(1),
   .nav-icons ul li:nth-child(2),
   .nav-icons ul li:nth-child(3){
     display: none;
   }
+  .banner{
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
+  .banner-description h3{
+  font-size: 45px;
+  font-weight: 700;
+}
 }
