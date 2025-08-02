@@ -13,6 +13,12 @@
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
 }
+.noto-serif {
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-variation-settings:
+    "wdth" 100;
+}
 
 .Dark-01 {
   color: rgb(37, 36, 50);
@@ -32,6 +38,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 20px;
 }
 .nav-icons ul {
   display: flex;
@@ -54,6 +61,7 @@
   display: flex;
   justify-content: space-between;
   align-items:  end;
+  margin-bottom: 20px;
 }
 .banner-description h3{
   font-size: 65px;
@@ -65,7 +73,51 @@
   font-weight: 400;
   color: rgba(0, 0, 0, 0.50);
 }
-
+/*Our plants styles*/
+.our-plants h3{
+  font-size: 50px;
+  font-weight: 700;
+  text-align: center;
+}
+.our-plants .description{
+  font-size: 22px;
+  font-weight: 400;
+  text-align: center;
+  color: (0, 0, 0, 0.5);
+  margin-bottom: 50px;
+}
+.card-container{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.card img{
+  margin-bottom: 20px;
+  width: 100%;
+}
+.card p{
+  font-size: 22px;
+  font-weight: 400;
+  color: #111111;
+  margin-bottom: 20px;
+}
+.card h4{
+  font-size: 22px;
+  font-weight: 700;
+  color: #111111;
+  margin-bottom: 20px;
+}
+.aline-center{
+  text-align: center;
+}
+.card button{
+  font-size: 16px;
+  font-weight: 600;
+  color: #FFFFFF;
+  background-color: #E95A08;
+  padding: 20px 80px;
+  border: none;
+}
 /*Media query for mobile device*/
 @media screen and (max-width: 576px){
   .navbar{
@@ -84,5 +136,10 @@
   .banner-description h3{
   font-size: 45px;
   font-weight: 700;
+}
+
+.card-container{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
 }
