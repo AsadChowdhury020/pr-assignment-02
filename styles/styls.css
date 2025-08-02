@@ -45,3 +45,11 @@
   font-size: 16px;
   font-weight: 700;
 }
+/*Media query for mobile device*/
+@media screen and (max-width: 576px){
+  .nav-icons ul li:nth-child(1),
+  .nav-icons ul li:nth-child(2),
+  .nav-icons ul li:nth-child(3){
+    display: none;
+  }
+}
