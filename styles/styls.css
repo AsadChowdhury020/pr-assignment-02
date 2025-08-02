@@ -152,6 +152,105 @@
   font-weight: 400;
   margin-bottom: 20px;
 }
+/*Deals section*/
+.deals{
+  margin: 100px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.deals h3{
+  font-size: 50px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 16px;
+}
+.deals p{
+  font-size: 16px;
+  font-weight: 400;
+  width: 50%;
+  text-align: center;
+}
+/*Discount section*/
+.discount{
+  display: flex;
+  width: 100%;
+  background-image: url(../assets/deal-bloom.png);
+  background-image: url(../assets/deal-ana.png);
+  background-image: url(../assets/deal-zabo.png);
+}
+.discount h3{
+  font-size: 20px;
+  font-weight: 700
+}
+.discount p{
+  font-size: 16px;
+  font-weight: 600
+}
+.hide{
+  display: none;
+}
+/*Join section*/
+.join{
+  background-image: url(../assets/news-letter-bg.png);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.join h3{
+  padding-top: 200px;
+  font-size: 50px;
+  font-weight: 700;
+  background: transparent;
+  color: #FFFFFF;
+}
+.join .input-section button{
+  font-size: 16px;
+  font-weight: 600;
+  color: #FFFFFF;
+  background-color: #E95A08;
+  padding: 20px 50px;
+  border: none;
+}
+.join .input-section input{
+   font-size: 16px;
+  font-weight: 400;
+  padding: 15px 500px 15px 20px;
+  border: none;
+}
+.join .input-section{
+  margin-bottom: 200px;
+}
+/*Footer style*/
+.footer{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 30px;
+  margin: 50px auto;
+  gap: 100px;
+}
+.footer p{
+  font-size: 22px;
+  font-weight: 400;
+}
+.footer ul li a{
+  text-decoration: none;
+}
+.footer ul li{
+  list-style: none;
+  font-size: 16px;
+  font-weight: 400;
+  color: rgb(107, 114, 128);
+  margin-bottom: 30px;
+}
+.right-side img{
+  margin-right: 15px;
+}
+
 /*Media query for mobile device*/
 @media screen and (max-width: 576px) {
   .navbar {
@@ -193,4 +292,33 @@
   .lover-image .badge-img {
     display: none;
   }
+  .deals{
+  margin: 10px auto;
+}
+.deals p{
+ width: 80%;
+}
+.join{
+  margin: 30px 0px;
+}
+.join .input-section input{
+  padding: 20px;
+}
+.join .input-section button{
+  padding: 20px;
+}
+.join h3{
+  text-align: center;
+  padding-top: 100px;
+  margin-top: 30px;
+}
+.join .input-section {
+    margin-bottom: 100px;
+}
+.footer{
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  gap: 20px;
+  margin-left: 20px;
+}
 }
